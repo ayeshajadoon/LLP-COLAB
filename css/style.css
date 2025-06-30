@@ -173,16 +173,18 @@ body,
 
 .hero-form-box {
     background: #FFDD03;
-    color: #222;
+    color: #000000;
     border-radius: 12px;
     box-shadow: 0 4px 24px rgba(0, 0, 0, 0.10);
 }
 
 .hero-form-box h5 {
-    color: #222;
+    font-size: 36px;
+    color: #000000;
 }
 
 .hero-form-box .form-control {
+    font-size: 24px;
     background: transparent !important;
     border: 1px solid #000000;
     border-radius: 9px;
@@ -197,7 +199,12 @@ body,
 }
 
 .hero-form-box .btn-dark {
-    background: #222;
+    font-size: 24px;
+    height: 43px;
+    font-weight: 700;
+    line-height: 97%;
+    letter-spacing: -0.03em;
+    background: #1D1D1D;
     color: #fff;
     border: none;
 }
@@ -362,7 +369,7 @@ body,
 }
 .lead-capture-section .hero-form-box h5 {
     color: #222;
-    font-size: 24px;
+    font-size: 36px;
     font-weight: 700;
 }
 
@@ -377,7 +384,16 @@ body,
         font-size: 16px;
     }
     .lead-capture-section .hero-form-box {
-        padding: 24px 10px;
+        padding: 32px 12px;
+        min-height: 420px;
+    }
+    .lead-capture-section .hero-form-box h5 {
+        font-size: 28px;
+    }
+    .lead-capture-section .form-control,
+    .lead-capture-section .btn-dark {
+        font-size: 18px;
+        height: 38px;
     }
 }
 @media (max-width: 991.98px) {
@@ -393,8 +409,16 @@ body,
         text-align: center;
     }
     .lead-capture-section .hero-form-box {
-        margin-top: 0;
         padding: 18px 2px;
+        min-height: 340px;
+    }
+    .lead-capture-section .hero-form-box h5 {
+        font-size: 22px;
+    }
+    .lead-capture-section .form-control,
+    .lead-capture-section .btn-dark {
+        font-size: 16px;
+        height: 34px;
     }
     .lead-capture-section .row {
         flex-direction: row !important;
@@ -426,8 +450,16 @@ body,
     }
     .lead-capture-section .hero-form-box {
         padding: 10px 0;
+        min-height: unset;
         border-radius: 10px;
-        margin-top: 24px;
+    }
+    .lead-capture-section .hero-form-box h5 {
+        font-size: 16px;
+    }
+    .lead-capture-section .form-control,
+    .lead-capture-section .btn-dark {
+        font-size: 14px;
+        height: 30px;
     }
     .lead-capture-section .col-lg-6,
     .lead-capture-section .col-lg-5,
@@ -644,7 +676,7 @@ body,
 .section3-feature-desc {
     font-family: 'Lato', Arial, sans-serif;
     font-weight: 400;
-    font-size: 20.68px;
+    font-size: 24px;
     line-height: 140%;
     letter-spacing: 0px;
     color: #1B1B1B;
@@ -1646,4 +1678,18 @@ body,
     .footer-logo-img img {
         margin-top: 12% !important;
     }
+}
+
+@media (min-width: 1200px) {
+  .lead-capture-section .hero-form-box {
+    min-height: 520px;
+    padding: 48px 32px;
+  }
+}
+
+@media (min-width: 1400px) {
+  .lead-capture-section .hero-form-box {
+    min-height: 620px;
+    padding: 64px 40px;
+  }
 }
